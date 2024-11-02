@@ -1,0 +1,68 @@
+/* Conteneur principal de chaque todo */
+.todo_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 555px;
+  border: 1px solid #c2b39a;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Conteneur pour le contenu de chaque todo (texte et icônes) */
+.todo_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Partie gauche avec le cercle et le titre */
+.todo_items_left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+/* Partie droite avec les boutons d'édition et de suppression */
+.todo_items_right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Boutons pour les icônes d'édition et de suppression */
+.todo_items_right button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Styles pour les icônes */
+.todo_items_right button i,
+.todo_items_left i {
+  font-size: 1.2em;
+  color: #c2b39a;
+}
+
+/* Style pour le texte barré si la tâche est complétée */
+.completed-text {
+  text-decoration: line-through;
+}
+
+/* Icône de cercle complété */
+.completed-circle {
+  color: #4caf50;
+}
